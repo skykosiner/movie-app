@@ -1,7 +1,9 @@
+import Card from "react-bootstrap/Card"
 import React, { useState, useEffect } from "react"
 import api from "../api"
+import uuid from "uuid/dist/v4"
 
-export const Card = () => {
+export const CardFilms = () => {
   // State
   const [isLoading, setLoading] = useState(true)
   const [films, setFilms] = useState([])
@@ -23,14 +25,22 @@ export const Card = () => {
         <h1>Loading...</h1>
       ) : (
         films.map(film => (
-          <p>
-            {film.fullTitle}
-            <img
+          <Card key={uuid()}>
+            <Card.Img
+              variant="top"
+              key={uuid()}
               style={{ width: "100px" }}
               src={film.image}
               alt="movie poster"
             />
-          </p>
+            <Card.Body
+              variant="primary"
+              key={uuid()}
+              className="flex flex-jc-c flex-jc-sb"
+            >
+              {film.fullTitle}
+            </Card.Body>
+          </Card>
         ))
       )}
     </div>
