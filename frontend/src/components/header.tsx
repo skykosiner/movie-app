@@ -23,6 +23,8 @@ const Name = styled.p`
   position: absolute;
   left: 5%;
   font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
 `
 
 export const Header = ({isOpen, setIsOpen}) => {
@@ -31,7 +33,7 @@ export const Header = ({isOpen, setIsOpen}) => {
   };
   return (
     <NavBar>
-      <Name>Movie list</Name>
+      <Name className="bold">Movie list</Name>
            <div className="hamburger">
             <HamburgerMenu
               isOpen={isOpen}

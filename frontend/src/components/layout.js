@@ -4,6 +4,7 @@ import { Header } from "./header.tsx"
 import GlobalStyle from "./globalStyles"
 import { Menu } from "./menu.tsx"
 import "../styles/header.css"
+import "../styles/yoni.min.css"
 
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false)

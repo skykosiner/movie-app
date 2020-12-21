@@ -1,0 +1,54 @@
+.flex {
+  display: flex;
+}
+
+.flex-d-row {
+  flex-direction: row;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-jc-fs {
+  justify-content: flex-start;
+}
+
+.hidden {
+  display: none;
+}
+.text-c {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.link-c-w {
+  color: white;
+}
+.link-c-b {
+  color: #000;
+}
+.post-ab {
+  position: absolute;
+}
+.post-rel {
+  position: relative;
+}
+.post-fix {
+  position: fixed;
+}

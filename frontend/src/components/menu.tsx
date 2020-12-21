@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'gatsby'
+
 import styled from 'styled-components'
 import  '../styles/menu.css'
-import {SpringConfig} from 'react-spring'
 
 const Inside = styled.div`
     background: gray;
@@ -12,20 +13,23 @@ const Inside = styled.div`
     width: 50vh;
     animation: left;
     z-index: 1;
+    ul li {
+        list-style: none;
+    }
 `
 
 export const Menu = ({isOpen}) => {
     return (
         <Inside className={isOpen ? "exit" : "show"}>
-            <ul>
+            <ul className="flex flex-al-c flex-jc-fs">
                 <li>
-                    <a href='#'>About</a>
+                    <Link className="link link-c-w" to='#'>About</Link>
                 </li>
+                <lientreating>
+                    <Link className="link link-c-w" to='#'>Projects</Link>
+                </lientreating>
                 <li>
-                    <a href='#'>Projects</a>
-                </li>
-                <li>
-                    <a href='#'>Contact</a>
+                    <Link className="link link-c-w" to='#'>Contact</Link>
                 </li>
             </ul>
         </Inside>
