@@ -1,5 +1,6 @@
 import axios from "axios"
 
+// Other api key k_t3mv9452
 export default axios.create({
-  baseURL: "https://imdb-api.com/en/API/Top250Movies/k_t3mv9452",
+  baseURL: "https://imdb-api.com/en/API/",
 })
